@@ -1,3 +1,5 @@
+// 한 요청을 두 개 이상의 객체에서 처리하고 싶을 때
+
 'use strict';
 class Handler {
   constructor() {
@@ -41,7 +43,9 @@ function init_ChainofResponsibility() {
   let handle1 = new ConcreteHandler1();
   let handle2 = new ConcreteHandler2();
   handle1.setSuccessor(handle2);
+  console.log('@@@')
   handle1.HandleRequest('run');
+  console.log('@@@')
   handle1.HandleRequest('stay');
 
 }

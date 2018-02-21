@@ -80,6 +80,7 @@ function init_Composite() {
   composite2.Add(composite1);
   composite1.GetChild(1).Operation();
   console.log('@@@@', composite2);
+  composite2.Remove(composite1)
   composite2.Operation();
 }
 init_Composite();

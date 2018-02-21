@@ -1,3 +1,6 @@
+// - 메멘토 패턴 (memento pattern) 
+// 객체를 이전의 상태로 복구시켜야 하는 경우
+
 'use strict';
 
 class Originator {

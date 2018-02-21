@@ -1,3 +1,7 @@
+// - 중재자 패턴 (mediator pattern)
+
+// 서로 관련된 객체 사이의 복잡한 통신과 제어를 한 곳으로 집중시키고자 할 때
+
 'use strict';
 
 class Mediator {
@@ -50,7 +54,7 @@ class ConcreteColleague1 extends Colleague {
   }
 
   setFeature(feature) {
-    console.log('ConcreteColleague1 Feature has changed from ' + this.feature + ' to ' + feature);
+    console.log('@@@ ConcreteColleague1 Feature has changed from ' + this.feature + ' to ' + feature);
     this.feature = feature;
     this.Changed();
   }
@@ -64,7 +68,7 @@ class ConcreteColleague2 extends Colleague {
   }
 
   setFeature(feature) {
-    console.log('ConcreteColleague2 Feature has changed from ' + this.feature + ' to ' + feature);
+    console.log('### ConcreteColleague2 Feature has changed from ' + this.feature + ' to ' + feature);
     this.feature = feature;
     this.Changed();
   }
@@ -74,5 +78,6 @@ class ConcreteColleague2 extends Colleague {
 function init_Mediator() {
   var mediator = new ConcreteMediator();
   mediator.colleague1.setFeature('new feature 1');
+  // mediator.colleague2.setFeature('new ^^^ 1');
 }
 init_Mediator();

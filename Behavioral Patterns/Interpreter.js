@@ -1,3 +1,6 @@
+// - 인터프리터 패턴 (Interpreter pattern)
+// 어떤 언어에 대한 인터프리터를 만들 때
+
 'use strict';
 
 class Context {
@@ -45,7 +48,7 @@ class NonterminalExpression extends AbstractExpression {
 }
 
 function init_Interpreter() {
-  //var context = new Context('A+B+A')
+  var context = new Context('A+B+A')
   console.log('Not implemented');
 }
 init_Interpreter();

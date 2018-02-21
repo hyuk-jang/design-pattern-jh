@@ -57,6 +57,7 @@ class Proxy extends Subject {
 
 function init_Proxy() {
   var proxy = new Proxy();
+  console.log('proxy', proxy)
   proxy.Request();
 }
 init_Proxy();
