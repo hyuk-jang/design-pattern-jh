@@ -42,7 +42,7 @@ class ConcreteImplementorA extends Implementor {
     console.log('ConcreteImplementorA created');
   }
 
-  OperationImp (){
+  OperationImp (number){
     console.log('ConcreteImplementorA OperationImp');
   }
 }
@@ -53,7 +53,7 @@ class ConcreteImplementorB extends Implementor {
     console.log('ConcreteImplementorB created');
   }
 
-  OperationImp (){
+  OperationImp (object){
     console.log('ConcreteImplementorB OperationImp');
   }
 }
@@ -67,5 +67,6 @@ function init_Bridge() {
     abstraction.setImp(new ConcreteImplementorB());
 
   abstraction.Operation();
+  
 }
 init_Bridge();
